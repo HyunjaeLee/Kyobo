@@ -28,7 +28,7 @@
 		431796391DA0E56900541E8B /* Safari.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Safari.h; sourceTree = "<group>"; };
 		4317963A1DA0E5A600541E8B /* Kyobo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kyobo-Bridging-Header.h"; sourceTree = "<group>"; };
 		4317963D1DA0E81C00541E8B /* SafariScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafariScript.h; sourceTree = "<group>"; };
-		4317963E1DA0E81C00541E8B /* SafariScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafariScript.m; sourceTree = "<group>"; };
+		4317963E1DA0E81C00541E8B /* SafariScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SafariScript.m; sourceTree = "<group>"; };
 		431796401DA0EBCA00541E8B /* SafariScript.scpt */ = {isa = PBXFileReference; lastKnownFileType = text; path = SafariScript.scpt; sourceTree = "<group>"; };
 		43D9E6571DA0531F00025D4A /* Kyobo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Kyobo; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D9E65A1DA0531F00025D4A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };

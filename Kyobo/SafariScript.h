@@ -13,5 +13,6 @@
 @interface SafariScript : NSObject
 
 - (void) run;
+- (void) wait:(unsigned int)useconds_t withJavaScript:(NSString*)script;
 
 @end
