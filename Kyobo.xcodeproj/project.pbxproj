@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4317963F1DA0E81C00541E8B /* SafariScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317963E1DA0E81C00541E8B /* SafariScript.m */; };
 		43D9E65B1DA0531F00025D4A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D9E65A1DA0531F00025D4A /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		431796381DA0E55F00541E8B /* Safari.sdef */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Safari.sdef; sourceTree = "<group>"; };
+		431796391DA0E56900541E8B /* Safari.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Safari.h; sourceTree = "<group>"; };
+		4317963A1DA0E5A600541E8B /* Kyobo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kyobo-Bridging-Header.h"; sourceTree = "<group>"; };
+		4317963D1DA0E81C00541E8B /* SafariScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafariScript.h; sourceTree = "<group>"; };
+		4317963E1DA0E81C00541E8B /* SafariScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafariScript.m; sourceTree = "<group>"; };
+		431796401DA0EBCA00541E8B /* SafariScript.scpt */ = {isa = PBXFileReference; lastKnownFileType = text; path = SafariScript.scpt; sourceTree = "<group>"; };
 		43D9E6571DA0531F00025D4A /* Kyobo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Kyobo; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D9E65A1DA0531F00025D4A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +64,12 @@
 		43D9E6591DA0531F00025D4A /* Kyobo */ = {
 			isa = PBXGroup;
 			children = (
+				431796391DA0E56900541E8B /* Safari.h */,
+				431796381DA0E55F00541E8B /* Safari.sdef */,
+				431796401DA0EBCA00541E8B /* SafariScript.scpt */,
+				4317963D1DA0E81C00541E8B /* SafariScript.h */,
+				4317963E1DA0E81C00541E8B /* SafariScript.m */,
+				4317963A1DA0E5A600541E8B /* Kyobo-Bridging-Header.h */,
 				43D9E65A1DA0531F00025D4A /* main.swift */,
 			);
 			path = Kyobo;
@@ -95,6 +108,7 @@
 					43D9E6561DA0531F00025D4A = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = CU6TTXXQZE;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4317963F1DA0E81C00541E8B /* SafariScript.m in Sources */,
 				43D9E65B1DA0531F00025D4A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +234,12 @@
 		43D9E65F1DA0531F00025D4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = CU6TTXXQZE;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Kyobo/Kyobo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -228,8 +247,11 @@
 		43D9E6601DA0531F00025D4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = CU6TTXXQZE;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Kyobo/Kyobo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -253,6 +275,7 @@
 				43D9E6601DA0531F00025D4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
